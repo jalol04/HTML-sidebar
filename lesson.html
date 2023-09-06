@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .sidebar{
+            height: 90vh;
+            width: 300px;
+            background: #313137;
+        }
+        .format{
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+        .format>h1{
+            font-size: 37px;
+            color: gray;
+            margin-left: 15px;
+            flex: 1;
+        }
+        .format>i{
+            color: gray;
+            font-size: 32px;
+            margin-right: 15px;
+        }
+        .eye{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background: #000;
+        }
+        .eye>span{
+            font-size: 20px;
+            color: green;
+            margin-left: 15px;
+            flex: 1;
+        }
+        .sidebar_collection{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .box{
+            height: 150px;
+            width: 50%;
+           border-radius: 6px;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           justify-content: center;
+        }
+        .box:hover{
+            cursor: pointer;
+            background: blue;
+        }
+        .box>i{
+            font-size: 40px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .box>p{
+            font-size: 24px;
+            color: #fff;
+        }
+        .more{
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            background: #000;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .more>p{
+            color: gray;
+            font-size: 20px;
+            margin-left: 10px;
+            flex: 1;
+        }
+        .more>i{
+            font-size: 20px;
+            color: gray;
+            margin-right: 10px;
+        }
+        .line{
+            height: 2px;
+            width: 80%;
+            margin: auto;
+            background: gray;
+            margin-top: 120px;
+        }
+        .settings{
+            height: 50px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .settings>p{
+            font-size: 20px;
+            color: #fff;
+            flex: 1;
+
+        }
+        .settings>p>span{
+            font-size: 16px;
+            color: gray;
+        }
+        .settings>i{
+            font-size: 30px;
+            color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="format">
+            <h1>Format</h1>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="eye">
+            <i  style="color: green; font-size: 20px ;margin-left: 15px;" class="fa-solid fa-eye"></i> 
+            <span>View live site</span>
+            <i style="color: green; font-size: 20px ;margin-right: 15px;"  class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="sidebar_collection">
+            <div class="box">
+                <i class="fa-solid fa-bars"></i>
+                <p>Dahsboard</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>Code</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-bars-staggered"></i>
+                <p>Menu</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-sheet-plastic"></i>
+                <p>Pages</p>
+            </div>
+        </div>
+        <div class="more">
+            <p>More</p>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="line"></div>
+        <div class="settings">
+            <p>Jaloliddin <i class="fa-solid fa-chevron-right"></i> <br><span>Pro Yearly</span></p>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+</body>
+</html>
